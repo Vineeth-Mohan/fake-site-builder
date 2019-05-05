@@ -9,5 +9,11 @@ Usage of ./main:
   -pageCount int
         Number of pages to generate (default 100)
   -template string
-        Path to seed HTML pages (default "./test-data")
+        Path to seed HTML pages (default "./seed-pages")
+  ```
+
+### How to build 
+```
+go get 'github.com/PuerkitoBio/goquery'
+go build src/main.go
 ```
