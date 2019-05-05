@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"graph"
 	"log"
 	"net/http"
@@ -20,10 +19,6 @@ func main() {
 		*numOfPages,
 		*templatePath,
 		dumpFolder)
-	fmt.Println("Nodes Length -> ", len(graph.Nodes))
-	for _, node := range graph.Nodes {
-		fmt.Println("Node -> ", node.URL)
-	}
 
 	fs := http.FileServer(http.Dir(dumpFolder))
 	http.Handle("/", fs)
