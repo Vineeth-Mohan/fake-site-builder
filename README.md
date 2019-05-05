@@ -11,3 +11,9 @@ Usage of ./main:
   -template string
         Path to seed HTML pages (default "./test-data")
 ```
+
+### How to build 
+```
+go get 'github.com/PuerkitoBio/goquery'
+go build src/main.go
+```
