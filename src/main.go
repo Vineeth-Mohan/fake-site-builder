@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	templatePath := flag.String("template", "./test-data", "Path to seed HTML pages")
+	templatePath := flag.String("template", "./seed-pages", "Path to seed HTML pages")
 	dumpPath := flag.String("dumpPath", "site", "Directory where fabricated HTML would be stored")
 	numOfPages := flag.Int("pageCount", 100, "Number of pages to generate")
 	flag.Parse()
